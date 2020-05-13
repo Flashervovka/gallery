@@ -1,0 +1,17 @@
+<div class="gallary-mustache">
+    <div class="gallary-mustache__arrow-left" id="{{hostId}}_arrowLeft">
+        <img src="{{arrowLeft}}" width="{{controllWidth}}">
+    </div>
+    <div class="gallary-mustache__photos-wrapper">
+        <div class="gallary-mustache__photos-list" id="{{hostId}}_photosList">
+            {{#photos}}
+                <div class="gallary-mustache__photo" photo="{{id}}{{value}}"><img src="{{src}}{{value}}" photo="{{id}}{{value}}" width="{{photoWidth}}"></div>
+            {{/photos}}
+        </div>
+    </div>
+    <div class="gallary-mustache__arrow-right" id="{{hostId}}_arrowRight">
+        <img src="{{arrowRight}}" width="{{controllWidth}}">
+    </div>
+</div>
+
+

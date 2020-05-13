@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallary</title>
+    <script src="js/es6/builds_js/gallary/Gallary.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gallery"></div>
+    <script>
+        var photos = [
+            {
+                id: '0',
+                src: './imgs/cat1.jpg',
+            },
+            {
+                id: '1',
+                src: './imgs/cat1.jpg',
+            },
+            {
+                id: '2',
+                src: './imgs/cat1.jpg',
+            },
+            {
+                id: '3',
+                src: './imgs/cat1.jpg',
+            },
+            {
+                id: '4',
+                src: './imgs/cat1.jpg',
+            },
+            {
+                id: '5',
+                src: './imgs/cat1.jpg',
+            },
+            {
+                id: '6',
+                src: './imgs/cat1.jpg',
+            },
+            {
+                id: '7',
+                src: './imgs/cat1.jpg',
+            },
+        ]
+
+        new window.Gallary({
+                photos, // массив фотографий
+                size: 5, //  кол-во видимых фотографий
+                current: '2', // id текущей фотографии
+                container: document.querySelector('#gallery'), // контейнер для встраивания галереи
+            }
+        );
+    </script>
+</body>
+</html>

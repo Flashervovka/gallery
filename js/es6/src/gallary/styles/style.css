@@ -1,0 +1,36 @@
+.gallary-mustache{
+    background: #d1d1d1;
+    display: flex;
+    justify-content: center;
+}
+.gallary-mustache__photos-wrapper{
+    display: flex;
+    width: 80%;
+    overflow: hidden;
+}
+.gallary-mustache__photo{
+    margin: 5px;
+}
+
+.gallary-mustache__photo img{
+    box-sizing: border-box;
+}
+
+
+.gallary-mustache__photos-list{
+    display: flex;
+    width: 100%;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.gallary-mustache__arrow-left, .gallary-mustache__arrow-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
